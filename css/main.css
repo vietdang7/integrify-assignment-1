@@ -85,4 +85,13 @@ li.button {
   height: 170px;
   position: relative;
   margin: 0 auto;
+  background: white;
+}
+
+.jumbotron {
+  background: -webkit-linear-gradient(#e5e9ea, #bad1d7);
+  background: -moz-linear-gradient (#e5e9ea, #bad1d7);
+  background: -ms-linear-gradient(#e5e9ea, #bad1d7);
+  background: -o-linear-gradient(#e5e9ea, #bad1d7);
+  background: linear-gradient(#e5e9ea, #bad1d7);
 }
