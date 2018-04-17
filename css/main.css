@@ -54,3 +54,6 @@ header {
 .button:hover a {
   color: white;
 }
+li.button {
+  margin-right: 5px;
+}
