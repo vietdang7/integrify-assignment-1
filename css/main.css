@@ -13,18 +13,22 @@ header {
   margin: auto;
 }
 .button {
+  position: relative;
   list-style: none;
   display: inline-block;
   text-transform: uppercase;
+  /* border: 2px solid #d7d7d7; */
+  border-radius: 5px;
 
   padding: 10px 35px;
   /* gradient */
   background: #f6f6f6;
-  background-image: -webkit-linear-gradient(top, #f6f6f6, #d7d7d7);
-  background-image: -moz-linear-gradient(top, #f6f6f6, #d7d7d7);
-  background-image: -ms-linear-gradient(top, #f6f6f6, #d7d7d7);
-  background-image: -o-linear-gradient(top, #f6f6f6, #d7d7d7);
-  background-image: linear-gradient(to bottom, #f6f6f6, #d7d7d7);
+  background: -webkit-linear-gradient(#f6f6f6, #d7d7d7);
+  background: -moz-linear-gradient (#f6f6f6, #d7d7d7);
+  background: -ms-linear-gradient(#f6f6f6, #d7d7d7);
+  background: -o-linear-gradient(#f6f6f6, #d7d7d7);
+  background: linear-gradient(#f6f6f6, #d7d7d7);
+  background-clip: padding-box;
 }
 .button:hover {
   background: #2b4f5d;
@@ -35,18 +39,21 @@ header {
   background-image: linear-gradient(to bottom, #2b4f5d, #628a98);
   color: white !important;
 }
-.button,
-.button:hover {
-  /* radius */
-  -webkit-border-radius: 5;
-  -moz-border-radius: 5;
+/* Use this hack to fix border-radius with background-image-source: https://stackoverflow.com/questions/5706963/possible-to-use-border-radius-together-with-a-border-image-which-has-a-gradient */
+
+.button::after {
+  position: absolute;
+  top: -1.5px;
+  bottom: -1.5px;
+  left: -1.5px;
+  right: -1.5px;
+  background: linear-gradient(#d7d7d7, #f6f6f6);
+  content: "";
+  z-index: -1;
   border-radius: 5px;
-  /* border */
-  border: 2px solid #d7d7d7;
-  border-image-source: linear-gradient(#d7d7d7, #f6f6f6);
-  border-image-slice: 5;
   box-shadow: 1px 1px 2px #b1b2b2;
 }
+
 .button a {
   text-decoration: none;
   color: #1c333b;
@@ -56,4 +63,9 @@ header {
 }
 li.button {
   margin-right: 5px;
+}
+
+/* Jumbotron */
+.round-img {
+  border-radius: 50%;
 }
