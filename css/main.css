@@ -152,3 +152,10 @@ hr.dotted-line {
   background-color: #fff;
   border-top: 1px dashed #8c8b8b;
 }
+aside h4 {
+  text-transform: uppercase;
+}
+.sub-text {
+  font-size: 0.8em;
+  color: #b2adb1;
+}
