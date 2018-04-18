@@ -3,7 +3,8 @@ body {
   font-family: arial, sans-serif;
 }
 section,
-header {
+header,
+main {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -140,4 +141,9 @@ a {
 }
 .text-section p {
   line-height: 30px;
+}
+/* Main section */
+main {
+  width: 90vw;
+  margin: auto;
 }
