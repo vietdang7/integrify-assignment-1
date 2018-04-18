@@ -1,6 +1,7 @@
 /* General settings */
 body {
   font-family: arial, sans-serif;
+  color: #5b5d5a;
 }
 section,
 header,
@@ -125,8 +126,8 @@ h2 {
   margin-top: 5px;
 }
 .text-section h3,
-h2,
-p {
+.text-section h2,
+.text-section p {
   text-shadow: 1px 1px 3px #f8f8f8;
 }
 .text-section h3 {
