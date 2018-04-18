@@ -1,6 +1,7 @@
 # Integrify First Assignment
 
 This is my first assignment of Integrify program.
+![Final Result](https://raw.githubusercontent.com/vietdang7/integrify-assignment-1/master/img/result.png)
 
 
 ## Purpose of this assignment
