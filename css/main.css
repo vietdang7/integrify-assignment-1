@@ -176,3 +176,7 @@ article.main-article {
   margin-right: 20px;
   border: 2px solid #bdbfc0;
 }
+aside.link p:before {
+  content: "• ";
+  padding-right: 10px;
+}
