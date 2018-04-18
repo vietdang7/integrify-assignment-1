@@ -148,3 +148,7 @@ main {
   width: 90vw;
   margin: auto;
 }
+hr.dotted-line {
+  background-color: #fff;
+  border-top: 1px dashed #8c8b8b;
+}
