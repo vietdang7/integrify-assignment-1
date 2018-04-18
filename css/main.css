@@ -4,8 +4,7 @@ body {
   color: #5b5d5a;
 }
 section,
-header,
-main {
+header {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -147,15 +146,33 @@ a {
 main {
   width: 90vw;
   margin: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 hr.dotted-line {
   background-color: #fff;
   border-top: 1px dashed #8c8b8b;
 }
-aside h4 {
+aside h4,
+article h4 {
   text-transform: uppercase;
 }
 .sub-text {
   font-size: 0.8em;
   color: #b2adb1;
+}
+aside.blog,
+aside.link {
+  width: 25%;
+}
+article.main-article {
+  text-align: justify;
+  width: 45%;
+}
+.article-thumbnail {
+  float: left;
+  margin-right: 20px;
+  border: 2px solid #bdbfc0;
 }
